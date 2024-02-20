@@ -13,20 +13,18 @@ enum ProductsFactory {
         // router
         let router = ProductsRouter()
         // repository
-        //let repository = ProductsRepository()
+        let repository = ProductsRepository(apiManager: APIManager())
         // viewModel
-        let viewModel = ProductsViewModel(apiManager: APIManager(), router: router)
+        let viewModel = ProductsViewModel(repository: repository, router: router)
         // viewController
         let viewController = ProductsViewController(viewModel: viewModel)
-        
         router.viewController = viewController
-        
         return viewController
     }
     
-    /*static func showSearchProductViewController(from originViewController: UIViewController) {
-        let viewController = getSearchProductViewController()
+    static func showProductsViewController(from originViewController: UIViewController) {
+        let viewController = getProductsViewController()
         originViewController.navigationController?.pushViewController(viewController, animated: true)
-    }*/
+    }
     
 }

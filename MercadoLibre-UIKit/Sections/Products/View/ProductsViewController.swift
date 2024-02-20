@@ -61,16 +61,21 @@ class ProductsViewController: UIViewController {
             self?.validateEvents(event: event)
         }.store(in: &subscriptions)
         
+        viewModel.$isLoading.dropFirst().sink { [weak self] isLoading in
+            guard let self else { return }
+            isLoading ? self.showSpinner(onView: view) : self.removeSpinner()
+        }.store(in: &subscriptions)
+        
         // view To viewModel
         searchProductView.publicSearchProductTextField.textPublisher
             .map({ (string) -> String? in
                 if string.count < 1 {
                     self.viewModel.outputEvents = .didGetData([])
-                    self.viewModel.outputEvents = .isLoading(false)
+                    self.viewModel.isLoading = false
                     return nil
                 }
                 
-                if !self.isLoading { self.viewModel.outputEvents = .isLoading(true) }
+                if !self.viewModel.isLoading { self.viewModel.isLoading = true }
                 
                 return string
             })
@@ -84,18 +89,11 @@ class ProductsViewController: UIViewController {
     
     private func validateEvents(event: SearchProductViewModelOutput) {
         switch event {
-        case .isLoading(let isLoading):
-            if isLoading {
-                showSpinner(onView: view)
-            } else {
-                removeSpinner()
-            }
         case .didGetData(let products):
             updateTableView(products: products)
         case .errorMessage(let error):
             showAlert(error: error)
-        case .none:
-            break
+        case .none: break
         }
     }
     

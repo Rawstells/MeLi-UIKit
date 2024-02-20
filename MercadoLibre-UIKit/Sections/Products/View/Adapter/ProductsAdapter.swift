@@ -23,15 +23,17 @@ class SearchProductAdapter: NSObject {
 extension SearchProductAdapter: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        products.count
+        products.count == .zero ? tableView.setEmptyMessage(message: "Realiza una busqueda para listar productos") : tableView.removeEmptyMessage()
+        return products.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: ProductsTableViewCell.name) as? ProductsTableViewCell else { return UITableViewCell() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: ProductsTableViewCell.name) as? ProductsTableViewCell else {
+            return UITableViewCell()
+        }
         cell.product = products[indexPath.row]
         return cell
     }
-    
 }
 
 // MARK: - UITableViewDelegate
@@ -40,5 +42,4 @@ extension SearchProductAdapter: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         didSelectItemAt.send((products[indexPath.row], products))
     }
-    
 }

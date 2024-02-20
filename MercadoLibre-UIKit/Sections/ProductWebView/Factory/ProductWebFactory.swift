@@ -8,9 +8,7 @@
 import UIKit
 
 enum ProductWebFactory {
-    
     static func getProductWebViewController(productUrl: URL) -> ProductWebViewController {
-        // viewController
         let viewController = ProductWebViewController()
         viewController.productUrl = productUrl
         return viewController
@@ -18,7 +16,6 @@ enum ProductWebFactory {
     
     static func showProductWebViewController(from originViewController: UIViewController, productUrl: URL) {
         let viewController = getProductWebViewController(productUrl: productUrl)
-        originViewController.present(viewController, animated: true, completion: nil)
+        originViewController.present(viewController, animated: true)
     }
-    
 }

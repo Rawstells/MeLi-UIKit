@@ -10,12 +10,9 @@ import UIKit
 var vSpinner: [UIView] = []
 
 extension UIViewController {
-    
-    var isLoading: Bool { view.viewWithTag(1)?.subviews.first { $0 is UIActivityIndicatorView } != nil }
-    
+        
     func showSpinner(onView: UIView) {
         let spinnerView = UIView(frame: onView.bounds)
-        spinnerView.tag = 1
         let activityIndicator = UIActivityIndicatorView(style: .large)
         activityIndicator.startAnimating()
         activityIndicator.center = spinnerView.center

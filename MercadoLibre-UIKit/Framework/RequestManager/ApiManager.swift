@@ -9,14 +9,14 @@ import Foundation
 
 protocol APIManagerProtocol {
     func request<T: Decodable>(url: String,
-                                             httpMethod: String,
-                                             request: Encodable?) async throws -> T
+                               httpMethod: String,
+                               request: Encodable?) async throws -> T
 }
 
 class APIManager: APIManagerProtocol {
     public func request<T: Decodable>(url: String,
-                                             httpMethod: String,
-                                             request: Encodable?) async throws -> T {
+                                      httpMethod: String,
+                                      request: Encodable?) async throws -> T {
         guard let url = URL(string: url) else {
             throw URLError(.badURL)
         }

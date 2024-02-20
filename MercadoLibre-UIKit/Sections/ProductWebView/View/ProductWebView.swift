@@ -25,12 +25,8 @@ class ProductWebView: UIView {
     
     // MARK: - Internal Properties
     
-    var productUrl: URL? {
-        didSet {
-            load()
-        }
-    }
-    
+    var productUrl: URL? { didSet { load() } }
+
     // MARK: - Private Properties
     
     private let webViewPrefs = WKWebpagePreferences()
@@ -85,5 +81,4 @@ class ProductWebView: UIView {
     private func closeButtonAction() {
         onTapCloseButton.send(())
     }
-    
 }

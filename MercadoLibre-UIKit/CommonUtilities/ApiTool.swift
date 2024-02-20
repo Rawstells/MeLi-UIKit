@@ -7,7 +7,11 @@
 
 import SystemConfiguration
 
-struct ApiTool {
+protocol ApiToolProtocol {
+    static func isNetworkReachable(with flags: SCNetworkReachabilityFlags) -> Bool
+}
+
+struct ApiTool: ApiToolProtocol {
 
     static private var reachability: SCNetworkReachability? {
         SCNetworkReachabilityCreateWithName(nil, "www.apple.com")
@@ -22,7 +26,7 @@ struct ApiTool {
         return isNetworkReachable(with: flags)
     }
 
-    static private func isNetworkReachable(with flags: SCNetworkReachabilityFlags) -> Bool {
+    static func isNetworkReachable(with flags: SCNetworkReachabilityFlags) -> Bool {
         let isReachable = flags.contains(.reachable)
         let needsConnection = flags.contains(.connectionRequired)
         let canConnectAutomatically = flags.contains(.connectionOnDemand) || flags.contains(.connectionOnTraffic)

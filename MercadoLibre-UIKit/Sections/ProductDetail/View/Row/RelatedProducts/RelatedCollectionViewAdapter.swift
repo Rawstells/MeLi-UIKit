@@ -47,5 +47,4 @@ extension RelatedCollectionViewAdapter: UICollectionViewDelegateFlowLayout {
         guard let productUrl = products[indexPath.row].permalinkUrl else { return }
         didSelectItemAt.send(productUrl)
     }
-    
 }

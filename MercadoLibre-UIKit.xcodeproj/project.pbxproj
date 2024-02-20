@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A8D6C252B8301F100BB5C8E /* ProductsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D6C242B8301F100BB5C8E /* ProductsViewModelTests.swift */; };
+		1A8D6C292B839F1400BB5C8E /* ProductsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D6C282B839F1400BB5C8E /* ProductsRepository.swift */; };
+		1A8D6C2B2B83A17700BB5C8E /* ProductsRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D6C2A2B83A17700BB5C8E /* ProductsRepositoryTests.swift */; };
+		1AD379542B841A140050198B /* UITableView+EmptyMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD379532B841A140050198B /* UITableView+EmptyMessage.swift */; };
 		F11232172B82D4410008CD79 /* UIViewController+Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11232162B82D4410008CD79 /* UIViewController+Spinner.swift */; };
 		F11232192B82D45B0008CD79 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11232182B82D45B0008CD79 /* UIViewController+Alert.swift */; };
 		F112321B2B82DB0D0008CD79 /* UITextField+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F112321A2B82DB0D0008CD79 /* UITextField+Combine.swift */; };
@@ -19,7 +23,6 @@
 		F19DCFD32B80767500689AA4 /* MercadoLibre_UIKit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F19DCFD12B80767500689AA4 /* MercadoLibre_UIKit.xcdatamodeld */; };
 		F19DCFD52B80767800689AA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F19DCFD42B80767800689AA4 /* Assets.xcassets */; };
 		F19DCFD82B80767800689AA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F19DCFD62B80767800689AA4 /* LaunchScreen.storyboard */; };
-		F19DCFE32B80767900689AA4 /* MercadoLibre_UIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DCFE22B80767900689AA4 /* MercadoLibre_UIKitTests.swift */; };
 		F19DCFED2B80767900689AA4 /* MercadoLibre_UIKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DCFEC2B80767900689AA4 /* MercadoLibre_UIKitUITests.swift */; };
 		F19DCFEF2B80767900689AA4 /* MercadoLibre_UIKitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DCFEE2B80767900689AA4 /* MercadoLibre_UIKitUITestsLaunchTests.swift */; };
 		F19DD0082B807AA400689AA4 /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DD0072B807AA400689AA4 /* ProductsViewModel.swift */; };
@@ -27,11 +30,9 @@
 		F19DD00C2B807B0900689AA4 /* MercadoLibreResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DD00B2B807B0900689AA4 /* MercadoLibreResponse.swift */; };
 		F19DD00F2B807B5800689AA4 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DD00E2B807B5800689AA4 /* ApiManager.swift */; };
 		F19DD0112B807B8900689AA4 /* ApiTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DD0102B807B8900689AA4 /* ApiTool.swift */; };
-		F19DD0182B826D8C00689AA4 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DD0172B826D8C00689AA4 /* Observable.swift */; };
 		F19DD01B2B8278F500689AA4 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DD01A2B8278F500689AA4 /* ProductDetailView.swift */; };
 		F19DD01D2B8279CE00689AA4 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DD01C2B8279CE00689AA4 /* ProductDetailViewController.swift */; };
 		F19DD01F2B827ABE00689AA4 /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DD01E2B827ABE00689AA4 /* UIImageViewExtensions.swift */; };
-		F19DD0242B827CE900689AA4 /* RelatedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DD0232B827CE900689AA4 /* RelatedTableViewCell.swift */; };
 		F19DD0262B827D2900689AA4 /* RelatedCollectionViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DD0252B827D2900689AA4 /* RelatedCollectionViewAdapter.swift */; };
 		F19DD0282B82891800689AA4 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DD0272B82891800689AA4 /* ImageService.swift */; };
 		F19DD02B2B828B6700689AA4 /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DD02A2B828B6700689AA4 /* ProductDetailViewModel.swift */; };
@@ -63,6 +64,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A8D6C242B8301F100BB5C8E /* ProductsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModelTests.swift; sourceTree = "<group>"; };
+		1A8D6C282B839F1400BB5C8E /* ProductsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRepository.swift; sourceTree = "<group>"; };
+		1A8D6C2A2B83A17700BB5C8E /* ProductsRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRepositoryTests.swift; sourceTree = "<group>"; };
+		1AD379532B841A140050198B /* UITableView+EmptyMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+EmptyMessage.swift"; sourceTree = "<group>"; };
 		F11232162B82D4410008CD79 /* UIViewController+Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Spinner.swift"; sourceTree = "<group>"; };
 		F11232182B82D45B0008CD79 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		F112321A2B82DB0D0008CD79 /* UITextField+Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Combine.swift"; sourceTree = "<group>"; };
@@ -75,7 +80,6 @@
 		F19DCFD72B80767800689AA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F19DCFD92B80767800689AA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F19DCFDE2B80767900689AA4 /* MercadoLibre-UIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MercadoLibre-UIKitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F19DCFE22B80767900689AA4 /* MercadoLibre_UIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MercadoLibre_UIKitTests.swift; sourceTree = "<group>"; };
 		F19DCFE82B80767900689AA4 /* MercadoLibre-UIKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MercadoLibre-UIKitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F19DCFEC2B80767900689AA4 /* MercadoLibre_UIKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MercadoLibre_UIKitUITests.swift; sourceTree = "<group>"; };
 		F19DCFEE2B80767900689AA4 /* MercadoLibre_UIKitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MercadoLibre_UIKitUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -87,11 +91,9 @@
 		F19DD0102B807B8900689AA4 /* ApiTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTool.swift; sourceTree = "<group>"; };
 		F19DD0122B8184C500689AA4 /* ProductWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductWebView.swift; sourceTree = "<group>"; };
 		F19DD0152B826C7900689AA4 /* ProductWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductWebViewController.swift; sourceTree = "<group>"; };
-		F19DD0172B826D8C00689AA4 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		F19DD01A2B8278F500689AA4 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 		F19DD01C2B8279CE00689AA4 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 		F19DD01E2B827ABE00689AA4 /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
-		F19DD0232B827CE900689AA4 /* RelatedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelatedTableViewCell.swift; sourceTree = "<group>"; };
 		F19DD0252B827D2900689AA4 /* RelatedCollectionViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelatedCollectionViewAdapter.swift; sourceTree = "<group>"; };
 		F19DD0272B82891800689AA4 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		F19DD02A2B828B6700689AA4 /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
@@ -130,12 +132,91 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A8D6C262B839E9700BB5C8E /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				1A8D6C282B839F1400BB5C8E /* ProductsRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		1A8D6C272B839EB700BB5C8E /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				F19DD03E2B82910000689AA4 /* ProductsFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		1AD3794C2B84163F0050198B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1AD3794E2B8416860050198B /* Supporting Files */,
+				F19DCFC82B80767500689AA4 /* AppDelegate.swift */,
+				F19DCFCA2B80767500689AA4 /* SceneDelegate.swift */,
+				F19DCFD62B80767800689AA4 /* LaunchScreen.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1AD3794D2B8416790050198B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F19DCFD42B80767800689AA4 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1AD3794E2B8416860050198B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F19DCFD92B80767800689AA4 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1AD3794F2B8417AC0050198B /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				F19DD0402B82AD9800689AA4 /* ProductDetailFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		1AD379502B8418E20050198B /* Row */ = {
+			isa = PBXGroup;
+			children = (
+				F19DD0332B828D6800689AA4 /* RelatedProducts */,
+			);
+			path = Row;
+			sourceTree = "<group>";
+		};
+		1AD379512B8418EE0050198B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F19DD0152B826C7900689AA4 /* ProductWebViewController.swift */,
+				F19DD0122B8184C500689AA4 /* ProductWebView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1AD379522B8418FA0050198B /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				F19DD0052B807A6300689AA4 /* ProductWebFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
 		F11232152B82D4290008CD79 /* CommonUI */ = {
 			isa = PBXGroup;
 			children = (
+				F19DD0272B82891800689AA4 /* ImageService.swift */,
+				F19DD01E2B827ABE00689AA4 /* UIImageViewExtensions.swift */,
 				F11232162B82D4410008CD79 /* UIViewController+Spinner.swift */,
 				F11232182B82D45B0008CD79 /* UIViewController+Alert.swift */,
 				F112321A2B82DB0D0008CD79 /* UITextField+Combine.swift */,
+				1AD379532B841A140050198B /* UITableView+EmptyMessage.swift */,
 			);
 			path = CommonUI;
 			sourceTree = "<group>";
@@ -163,20 +244,13 @@
 		F19DCFC72B80767500689AA4 /* MercadoLibre-UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				1AD3794D2B8416790050198B /* Resources */,
+				1AD3794C2B84163F0050198B /* Main */,
 				F11232152B82D4290008CD79 /* CommonUI */,
 				F19DCFFB2B80792C00689AA4 /* CommonUtilities */,
 				F19DCFFC2B80793F00689AA4 /* Framework */,
-				F19DCFFD2B80795E00689AA4 /* Main */,
 				F19DCFFE2B80796D00689AA4 /* Sections */,
-				F19DCFC82B80767500689AA4 /* AppDelegate.swift */,
-				F19DCFCA2B80767500689AA4 /* SceneDelegate.swift */,
-				F19DCFD42B80767800689AA4 /* Assets.xcassets */,
-				F19DCFD62B80767800689AA4 /* LaunchScreen.storyboard */,
-				F19DCFD92B80767800689AA4 /* Info.plist */,
 				F19DCFD12B80767500689AA4 /* MercadoLibre_UIKit.xcdatamodeld */,
-				F19DD0172B826D8C00689AA4 /* Observable.swift */,
-				F19DD01E2B827ABE00689AA4 /* UIImageViewExtensions.swift */,
-				F19DD0272B82891800689AA4 /* ImageService.swift */,
 			);
 			path = "MercadoLibre-UIKit";
 			sourceTree = "<group>";
@@ -184,7 +258,8 @@
 		F19DCFE12B80767900689AA4 /* MercadoLibre-UIKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				F19DCFE22B80767900689AA4 /* MercadoLibre_UIKitTests.swift */,
+				1A8D6C242B8301F100BB5C8E /* ProductsViewModelTests.swift */,
+				1A8D6C2A2B83A17700BB5C8E /* ProductsRepositoryTests.swift */,
 			);
 			path = "MercadoLibre-UIKitTests";
 			sourceTree = "<group>";
@@ -214,18 +289,10 @@
 			path = Framework;
 			sourceTree = "<group>";
 		};
-		F19DCFFD2B80795E00689AA4 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
 		F19DCFFE2B80796D00689AA4 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
 				F19DD0342B828DB100689AA4 /* ProductWebView */,
-				F19DD0332B828D6800689AA4 /* RelatedProducts */,
 				F19DCFFF2B80798E00689AA4 /* Products */,
 				F19DD0002B80799800689AA4 /* ProductDetail */,
 			);
@@ -235,11 +302,12 @@
 		F19DCFFF2B80798E00689AA4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F19DD03B2B82901100689AA4 /* Router */,
 				F19DD0032B807A3600689AA4 /* Model */,
 				F19DD0022B807A3100689AA4 /* View */,
 				F19DD0012B807A2700689AA4 /* ViewModel */,
-				F19DD03E2B82910000689AA4 /* ProductsFactory.swift */,
+				1A8D6C262B839E9700BB5C8E /* Repository */,
+				F19DD03B2B82901100689AA4 /* Router */,
+				1A8D6C272B839EB700BB5C8E /* Factory */,
 			);
 			path = Products;
 			sourceTree = "<group>";
@@ -247,10 +315,10 @@
 		F19DD0002B80799800689AA4 /* ProductDetail */ = {
 			isa = PBXGroup;
 			children = (
-				F19DD02C2B828BEB00689AA4 /* Router */,
-				F19DD0292B828B4200689AA4 /* Model */,
 				F19DD0192B8278D700689AA4 /* View */,
-				F19DD0402B82AD9800689AA4 /* ProductDetailFactory.swift */,
+				F19DD0292B828B4200689AA4 /* ViewModel */,
+				F19DD02C2B828BEB00689AA4 /* Router */,
+				1AD3794F2B8417AC0050198B /* Factory */,
 			);
 			path = ProductDetail;
 			sourceTree = "<group>";
@@ -294,28 +362,19 @@
 		F19DD0192B8278D700689AA4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1AD379502B8418E20050198B /* Row */,
 				F19DD01A2B8278F500689AA4 /* ProductDetailView.swift */,
 				F19DD01C2B8279CE00689AA4 /* ProductDetailViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		F19DD0222B827CD300689AA4 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				F19DD0232B827CE900689AA4 /* RelatedTableViewCell.swift */,
-				F19DD0252B827D2900689AA4 /* RelatedCollectionViewAdapter.swift */,
-				F112321E2B82EDEE0008CD79 /* RelatedCollectionViewCell.swift */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		F19DD0292B828B4200689AA4 /* Model */ = {
+		F19DD0292B828B4200689AA4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				F19DD02A2B828B6700689AA4 /* ProductDetailViewModel.swift */,
 			);
-			path = Model;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		F19DD02C2B828BEB00689AA4 /* Router */ = {
@@ -329,7 +388,8 @@
 		F19DD0332B828D6800689AA4 /* RelatedProducts */ = {
 			isa = PBXGroup;
 			children = (
-				F19DD0222B827CD300689AA4 /* Cell */,
+				F19DD0252B827D2900689AA4 /* RelatedCollectionViewAdapter.swift */,
+				F112321E2B82EDEE0008CD79 /* RelatedCollectionViewCell.swift */,
 			);
 			path = RelatedProducts;
 			sourceTree = "<group>";
@@ -337,9 +397,8 @@
 		F19DD0342B828DB100689AA4 /* ProductWebView */ = {
 			isa = PBXGroup;
 			children = (
-				F19DD0052B807A6300689AA4 /* ProductWebFactory.swift */,
-				F19DD0152B826C7900689AA4 /* ProductWebViewController.swift */,
-				F19DD0122B8184C500689AA4 /* ProductWebView.swift */,
+				1AD379522B8418FA0050198B /* Factory */,
+				1AD379512B8418EE0050198B /* View */,
 			);
 			path = ProductWebView;
 			sourceTree = "<group>";
@@ -439,6 +498,7 @@
 					};
 					F19DCFDD2B80767900689AA4 = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 						TestTargetID = F19DCFC42B80767500689AA4;
 					};
 					F19DCFE72B80767900689AA4 = {
@@ -498,13 +558,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F19DD0182B826D8C00689AA4 /* Observable.swift in Sources */,
 				F19DD01B2B8278F500689AA4 /* ProductDetailView.swift in Sources */,
 				F19DD0262B827D2900689AA4 /* RelatedCollectionViewAdapter.swift in Sources */,
 				F19DD01D2B8279CE00689AA4 /* ProductDetailViewController.swift in Sources */,
 				F112321F2B82EDEE0008CD79 /* RelatedCollectionViewCell.swift in Sources */,
 				F11232172B82D4410008CD79 /* UIViewController+Spinner.swift in Sources */,
 				F11232222B82F26C0008CD79 /* ProductWebView.swift in Sources */,
+				1A8D6C292B839F1400BB5C8E /* ProductsRepository.swift in Sources */,
 				F19DD01F2B827ABE00689AA4 /* UIImageViewExtensions.swift in Sources */,
 				F19DD02E2B828BF900689AA4 /* ProductDetailRouter.swift in Sources */,
 				F19DD0112B807B8900689AA4 /* ApiTool.swift in Sources */,
@@ -512,7 +572,6 @@
 				F19DD0082B807AA400689AA4 /* ProductsViewModel.swift in Sources */,
 				F19DD00F2B807B5800689AA4 /* ApiManager.swift in Sources */,
 				F19DD0322B828D1600689AA4 /* ProductsView.swift in Sources */,
-				F19DD0242B827CE900689AA4 /* RelatedTableViewCell.swift in Sources */,
 				F19DD00A2B807AEB00689AA4 /* ResultResponse.swift in Sources */,
 				F19DD03A2B828F4400689AA4 /* ProductsAdapter.swift in Sources */,
 				F112321B2B82DB0D0008CD79 /* UITextField+Combine.swift in Sources */,
@@ -529,6 +588,7 @@
 				F19DD00C2B807B0900689AA4 /* MercadoLibreResponse.swift in Sources */,
 				F19DD0372B828E6500689AA4 /* ProductsTableViewCell.swift in Sources */,
 				F19DCFCB2B80767500689AA4 /* SceneDelegate.swift in Sources */,
+				1AD379542B841A140050198B /* UITableView+EmptyMessage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,7 +596,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F19DCFE32B80767900689AA4 /* MercadoLibre_UIKitTests.swift in Sources */,
+				1A8D6C252B8301F100BB5C8E /* ProductsViewModelTests.swift in Sources */,
+				1A8D6C2B2B83A17700BB5C8E /* ProductsRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -704,7 +765,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A9RWBUKBC5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "MercadoLibre-UIKit/Info.plist";
+				INFOPLIST_FILE = "MercadoLibre-UIKit/Main/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -731,7 +792,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A9RWBUKBC5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "MercadoLibre-UIKit/Info.plist";
+				INFOPLIST_FILE = "MercadoLibre-UIKit/Main/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -754,6 +815,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A9RWBUKBC5;
@@ -763,6 +825,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "conan.MercadoLibre-UIKitTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MercadoLibre-UIKit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MercadoLibre-UIKit";
@@ -774,6 +837,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A9RWBUKBC5;

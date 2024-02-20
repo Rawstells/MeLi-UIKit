@@ -59,7 +59,6 @@ class ProductDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupBindings()
-
     }
     
     // MARK: - Private Methods
@@ -68,15 +67,14 @@ class ProductDetailViewController: UIViewController {
         productDetailView.onTapSeeMoreButton.sink { [unowned self] productUrl in
             viewModel.goToProductWebView(productUrl: productUrl)
         }.store(in: &subscriptions)
+
         adapter.didSelectItemAt.sink { [unowned self] productUrl in
             viewModel.goToProductWebView(productUrl: productUrl)
         }.store(in: &subscriptions)
     }
     
     private func updateTableView() {
-        let tenProducts = products[0...]
-        adapter.products = tenProducts.filter { $0.title != product?.title }
+        adapter.products = products.filter { $0.id != product?.id }
         productDetailView.reloadTableViewData()
     }
-
 }

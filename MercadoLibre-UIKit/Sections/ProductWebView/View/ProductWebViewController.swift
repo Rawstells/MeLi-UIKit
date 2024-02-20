@@ -38,9 +38,7 @@ class ProductWebViewController: UIViewController {
 
     private func setupBindings() {
         productWebView.onTapCloseButton.sink { [unowned self] _ in
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                self.dismiss(animated:true, completion: nil)
-            }
+            self.dismiss(animated: true, completion: nil)
         }.store(in: &subscriptions)
     }
 }
